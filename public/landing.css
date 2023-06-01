@@ -1,140 +1,132 @@
-body{
-  padding: 0;
-  margin: 0;
-  background-image: url("/public/fondo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-  background-size:cover;
-  position: relative;
+*{
+  margin: 0%;
 }
-  
-.container {
+html{
+  font-size: 62.5%;
+  font-family: 'Rubik', sans-serif;
+}
+body{
+  font-size: 16px;
+}
+h1{
+  font-size: 5rem;
+}
+header{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 0%;
+  margin: 10px 30px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.baner{
+  background-image: url('/public/angulo-vista-rascacielos.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  padding: 0%;
+}
+.baner-container{
+  background: linear-gradient(180deg, rgba(39, 147, 242, 0.8) 0%, rgba(37, 64, 217, 0.6) 100%);
+  height: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-
-  background-color: rgba(255, 255, 255, 0.30);
-  border-radius: 10px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.18)
+  color: #fff;
+  padding: 0%;
+  position: relative;
+  text-align: center;
 }
-
-.p1 {
-  font-weight: 800;
-  color: black;
+.p-underContruction{
+  font-size: 3rem;
 }
-.p1::before,
-.p1::after {
-  content: " ";
+.lines-baner{
   position: absolute;
-  background-color: rgb(0, 0, 0);
-}
-
-.p1::before {
-  top: 50%;
-  transform: translateX(-100%) translateY(-50%);
-}
-.p1::after {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
+  overflow: hidden;
+  bottom: 0%;
+  width: 100%;
   
-
-@media only screen and (max-width: 600px) {
-.p1 {
-  font-size: 25px;
 }
-.p1::before,
-.p1::after {
-  width: 20px;
-  height: 5px;
+.about{
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-
-.container {
-  margin-top: 0em;
-  padding: .5em;
-  border-radius: 5px;
+.section-about{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
 }
+.services{
+  text-align: center;
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-.p1 {
-  font-size: 35px;
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  gap: 3rem;
 }
-.p1::before,
-.p1::after {
-  width: 22px;
-  height: 7px;
+.card{
+  width: 30rem;
 }
-
-.container {
-  margin-top: 0em;
-  padding: .5em;
-  border-radius: 5px;
+.img-container{
+  height: 20rem;
+  width: 30rem;
+  overflow: hidden;
+  
 }
+.imagen{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-.p1 {
-  font-size: 50px;
-}
-.p1::before,
-.p1::after {
-  width: 25px;
-  height: 10px;
+.card-description{
+  text-align: left;
+  padding-top: 1rem;
 }
 
-.container {
-  margin-top: 0em;
-  padding: .5em;
-  border-radius: 5px;
+footer{
+  background: linear-gradient(106.65deg, #2793F2 0%, rgba(37, 64, 217, 1) 100%);
+  text-align: center;
+  color: #fff;
+  padding-top: 3rem;
 }
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 10rem;
+  align-items: center;
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .p1 {
-  font-size: 75px;
+.link{
+  text-decoration: none;
+  color: #fff;
 }
-.p1::before,
-.p1::after {
-  width: 50px;
-  height: 20px;
+@media (max-width:900px) {
+  h1{
+    font-size: 2.5rem;
+  }
+  p{
+    text-align: justify;
+  }
+  .p-underContruction{
+    font-size: 2rem;
+  }
+  .about{
+    padding: 0 2rem;
+  }
 }
-
-.container {
-  margin-top: .5em;
-  padding: 1em;
-  border-radius: 5px;
-}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .p1 {
-  font-size: 100px;
-}
-.p1::before,
-.p1::after {
-  width: 100px;
-  height: 30px;
-}
-
-.container {
-  margin-top: 1em;
-  padding: 2em;
-  border-radius: 10px;
-
-}
+@media (max-width:500px) {
+  h1{
+    font-size: 2rem;
+  }
+  .p-underContruction{
+    font-size: 1.5rem;
+  }
 }
